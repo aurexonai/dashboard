@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 192 38% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 192 38% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 192 38% 15%;
+
+    --primary: 192 38% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 192 38% 15%;
+
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 33%;
+
+    --accent: 74 96% 63%;
+    --accent-foreground: 192 38% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 83%;
+    --input: 0 0% 83%;
+    --ring: 192 38% 15%;
+
+    --radius: 0.75rem;
+
+    --bg-base: 0 0% 100%;
+    --bg-section: 0 0% 95%;
+    --text-primary: 192 38% 15%;
+    --text-secondary: 0 0% 33%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 192 38% 15%;
+    --sidebar-primary: 192 38% 15%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 74 96% 63%;
+    --sidebar-accent-foreground: 192 38% 15%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 192 38% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
